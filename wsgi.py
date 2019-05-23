@@ -7,7 +7,7 @@ application = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 main="<form method='post'>url<input type=text name=search><input type=submit value=GO></form>"
 
-@app.route('/',methods=['GET', 'POST'])
+@application.route('/',methods=['GET', 'POST'])
 def login():
 	if request.method == 'POST':
 		str=request.form['search']
@@ -28,7 +28,7 @@ def login():
 		return main+response.prettify()
 	return main
 
-@app.route('/files',methods=['GET','POST'])
+@application.route('/files',methods=['GET','POST'])
 def files():
 	return rq.get(request.args['q']).content, 200, {'Content-Type': 'application'}
 	
