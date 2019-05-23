@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup as bs
 application = Flask(__name__)
 
 # Set the secret key to some random bytes. Keep this really secret!
-app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+application.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 main="<form method='post'>url<input type=text name=search><input type=submit value=GO></form>"
 
 @application.route('/',methods=['GET', 'POST'])
@@ -19,7 +19,7 @@ def login():
 			if img['src'][:4]== 'http':
 				img['src']='/files?q='+img['src']
 			else:
-				img['src']='/files?q='+r.url+img['src'][1:]
+				img['src']='/files?q='+r.url+img['src'][1:]	
 		for link in response.select("[href]"):
 			if link['href'][:4]== 'http':
 				link['href']='/files?q='+link['href']
