@@ -3,6 +3,10 @@
 ```
 pip install --proxy http://<usr_name>:<password>@<proxyserver_name>:<port#> <pkg_name>
 ```
+## npm use proxy
+```
+npm --proxy http://<usr_name>:<password>@<proxyserver_name>:<port#> install <pkg_name>
+```
 ## censored site list
 ```
 zoom.us
