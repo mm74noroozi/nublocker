@@ -7,6 +7,12 @@ pip install --proxy http://<usr_name>:<password>@<proxyserver_name>:<port#> <pkg
 ```
 npm --proxy http://<usr_name>:<password>@<proxyserver_name>:<port#> install <pkg_name>
 ```
+## ArvanCloud outgoing ips (not iran)
+amesterdam
+```
+185.215.232.53
+185.215.232.21
+```
 ## censored site list
 ```
 zoom.us
