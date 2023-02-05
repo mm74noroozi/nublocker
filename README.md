@@ -7,6 +7,10 @@ pip install --proxy http://<usr_name>:<password>@<proxyserver_name>:<port#> <pkg
 ```
 npm --proxy http://<usr_name>:<password>@<proxyserver_name>:<port#> install <pkg_name>
 ```
+## npm use repo
+```
+npm install --repository=https://repo.mofid.dev/artifactory/api/npm/npm/
+```
 ## ArvanCloud outgoing ips (not iran)
 amesterdam
 ```
