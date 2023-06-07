@@ -3,6 +3,10 @@
 ```
 pip install --proxy http://<usr_name>:<password>@<proxyserver_name>:<port#> <pkg_name>
 ```
+## pip from mirror repo
+```
+pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple <pkg_name>
+```
 ## npm use proxy
 ```
 npm --proxy http://<usr_name>:<password>@<proxyserver_name>:<port#> install <pkg_name>
